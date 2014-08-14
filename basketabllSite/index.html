@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>To be the Best</title>
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+
+    <title>To be the Best</title>
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+   
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+
+  </head>
+  <section>
+    <body>
+      <div class="nav">
+        <div class="container">
+          <div class="containers">
+            <ul class="pull-left">
+              <li>Got Game?</li>
+            </ul>
+          </div>
+          <ul class="pull-right">
+            <li><a id="login" onClick="toggleLogin()" href="#">Log in </a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="#">Find a Park</a></li>
+          </ul> 
+        </div>
+      </div> 
+    </section>
+
+<!-- 
+    <div class="login_page">
+      <div class="pull-right">
+        <p id="error"></p>
+        <form class="pure-form">
+          <fieldset>
+           <div id="login" class="view active">
+            <input id="txtEmail" class="input-box" type="text" placeholder="Email">
+            <input id="txtPass" class="input-box" type="password" placeholder="Password"> -->
+
+        <!--     <label for="remember">
+              <input id="remember" type="checkbox"> Remember me
+            </label>
+ -->
+
+           <!--  <label for="chkRegister">
+               <input id="chkRegister" type="checkbox" value="Register" checked /> Register
+            </label>
+
+            <button id="btAction" type="submit" class="pure-button pure-button-primary btn"> --><!-- <a href="person_profile.html">Sign in</a> --><!-- Register</button>
+           </div>
+          </fieldset>
+
+        </form>
+      </div>
+    </div>
+ -->
+ <div class="login_page" >
+    <div class="container">
+        <p id="error"></p>
+        <div id="login" class="view active">
+            <ul>
+                <li>
+                    <input id="theEmail" class="input-box" type="text" placeholder="Email" />
+                </li>
+                <li>
+                    <input id="thePassword" class="input-box" type="password" placeholder="Password" />
+                </li>
+                <li>
+                    <label for="chkRegister">
+                        <input id="chkRegister" type="checkbox" /> Remember me
+                    </label>
+                </li>
+                <li>
+                    <button id="btAction" class="btn" onclick="login()" >Log In Now</button>
+                </li>
+            </ul>
+        </div>
+
+        <div id="userInfo" class="view">
+            <h4>Users</h4>
+            <button id="btLogout" class="btn">Logout</button>
+            <ul id="userList">
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+    <section>
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Find competition to play against.</h1>
+          <p> Play over thousands of people and record your score to prove your the best in the city.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="neighborhood-guides">
+        <div class="container">
+          <h2>Neighborhood Courts</h2>
+          <p>Not sure where to play? Well still, come on down to one of these parks; We created these court guides for you to show off your ball skills.</p>
+          <div class="row">
+            <div class="col-md-4"> 
+              <div class="thumbnail">
+                <img src="http://soulofamerica.com/soagalleries/nyc/historic-sites/NYC_Rucker_Basketball_Court.jpg">
+                <p>Rucker Park</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="http://www.courtsoftheworld.com/upload/courts/3261/0/COTW-Central-Park-1369497697.jpg" height="450" width="450">
+                <p>Central Park Courts</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="http://api.ning.com/files/3inNVyMeyJEySN35UPGPI7bByA5bXCP-YJwbwU9frnRRbxVvpCQvg-GTjKm1rOdTkgn1GpMOujT8qvBsIdY-D*SjKQbCAlJh/Famous_New_York_Streetball_Court.png?width=737&height=489">
+                <p>Tri-State Park</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>  
+      <div class="learn-more">
+       <div class="container">
+        <div class="row">
+
+         <div class="col-md-4">
+           <h3>Find a player</h3>
+           <p>Just simply challege a player of your choice and pick a court and arrange a date. Its as simple as that.</p>
+           //or Find, compete, and earn points for ..
+           <p><a href="#">Challenge your friend</a></p>
+         </div>
+
+         <div class="col-md-4">
+           <h3>Play</h3>
+           <p>Play your heart out and leave blood, sweat, and tears on the court....... well without the blood.</p>
+           <p><a href="#">Practice drills</a></p>
+         </div>
+
+         <div class="col-md-4">
+           <h3>Record the play</h3>
+           <p>To the Loser: Dont be a sore loser, better you're game to make sure you win next time <br><br>To the Winner: record the win in your gamebook.</p>
+           <p><a href="#">Check out your personal gamebook</a></p>
+         </div>
+
+       </div>
+     </div>
+   </div>
+ </section>
+
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
+ <script src="https://cdn.firebase.com/js/simple-login/1.6.1/firebase-simple-login.js"></script>
+ <script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

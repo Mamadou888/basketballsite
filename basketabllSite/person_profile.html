@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>To be the Best</title>
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+
+    <title>To be the Best</title>
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"> 
+   
+    <style type="text/css">
+
+      .jumbotron .profilePagePic{
+        background-image:url("http://sonconslow.org/wp-content/uploads/2010/08/basketball.jpg");
+        background-size: 1500px 780px;
+        background-repeat: no-repeat;
+        background-image: center;
+        background-attachment: relative;
+        height: 560px;
+        color: #FFFFFF;
+      }
+
+      button {
+        background-color: rgba(300, 0, 0, .37);
+        font-family: 'Lato', sans-serif; 
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-size: 20px;
+        border: solid black 2px;
+        text-decoration: none;
+        text-align: center;
+        background-image: center;
+        font-weight: 100;
+        background-position: relative;
+      }
+
+      footer{
+          color: maroon;
+          margin-left: 30px;
+      }
+
+        #madewithlove {
+          color: black;
+          font-weight: bold;
+        }
+
+    </style>
+     <link rel="stylesheet" type="text/css" href="normalize.css">
+  </head>
+  <section>
+    <body>
+      <div class="nav">
+        <div class="container">
+          <div class="containers">
+            <ul class="pull-left">
+              <li id="username">Welcome User</li>
+            </ul>
+          </div>
+          <ul class="pull-right">
+            <li><a id="login" href="myGameBook.html">Game Book</a></li>
+            <li><a onclick="logout()">Log Out</a></li>
+            <li><a href="#">Find a Park</a></li>
+          </ul> 
+        </div>
+      </div>
+    </section>
+
+
+    <div id="userInfo" class="view">
+      <h4>Users</h4>
+      <button id="btLogout" class="btn">Logout</button>
+      <ul id="userList">
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<section>
+  <div class="jumbotron">
+  <div class="profilePagePic">
+    <div class="container">
+      <div class="choice">
+        <h1>User Profile</h1>
+        <p> Explore Your Profile</p>
+
+        <section>
+          <div class="row">
+            <div class="col-md-6">
+                <div class="text-center"> 
+                  <button id="gamebookButton" onclick="gotonextpage()">My GameBook</button>
+                </div>
+                <p>Go out and play games to build an awesome winning streak. Prove you're the best in the city!</p>
+            </div>
+            <div class="col-md-6">
+              <div class="text-center"> 
+                <button>Find local Players</button>
+              </div>
+               <p>This is how you you find challenges to gain points and building a baller's profile</p>
+            </div>
+          </div>
+       </section>
+
+     </div>
+     </div>
+   </div>
+ </div>
+</section>
+
+
+<section>
+  <footer class="footer">
+    <div class="col-md-4">
+      <p>Developer: Mamadou Diallo</p>
+    </div>
+    <div class="col-md-4">
+      <p id="madewithlove">---Made with love in NYC---</p>
+    </div>
+    <div class="col-md-4">
+      <p>Contact owner at: <a href="mailto:mamadou888@gmail.com">Mamadou888@gmail.com</a>.</p>
+    </div>
+  </div>
+</footer>
+
+</section>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
+<script src="https://cdn.firebase.com/js/simple-login/1.6.1/firebase-simple-login.js"></script>
+<script src="https://cdn-gh.firebase.com/demo-utils-script/demo-utils.js"></script>
+<script type="text/javascript" src="userProfileMain.js"></script>
+</body>
+</html>
