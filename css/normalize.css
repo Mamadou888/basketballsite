@@ -14,14 +14,14 @@
   padding: 0px;
 }
 
-.nav{
+.nav {
     border: -50px solid;
     left: 70px;
     background-position: relative;
 }
 
 .nav .containers{
-    margin-top: 11px;
+    margin-top: 10px;
     padding: 0px;
 }
 .nav .containers li {
@@ -48,7 +48,6 @@
   color: maroon;
   font-size: 42px;
   text-align: center;  
-  font-family: 'Shift', sans-serif;
   font-weight: bold;
 }
 
@@ -60,12 +59,15 @@
   padding: 5px;
 }
 
+.jumbotron .colorMaroon p {
+  color: maroon;
+}
+
 .learn-more {
   background-color: #f7f7f7;
 }
 
 .learn-more h3 {
-  font-family: 'Shift', sans-serif;
   font-size: 18px;
   font-weight: bold;
 }
@@ -93,9 +95,57 @@
       margin-right: 165px;
 }
 
+#error {
+    color: #f00;
+    font-weight: bold;
+}
 
 
+.input-box {
+    width: 100%;
+    height: 40px;
+}
 
+.btn {
+    padding: 10px;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.container ul li {
+    margin-bottom: 5px;
+}
+
+.container ul .input-box {
+    margin-bottom: 10px;
+}
+
+.view {
+    display: none;
+}
+
+.view.active {  
+    display: block;
+}
+
+.footer {
+  display: inline;
+  background-position: relative;
+  text-transform: uppercase;
+  margin: 0px;
+
+}
+
+.jumbotron .container .choice {
+  background-size: 700px 600px;
+  background-repeat: no-repeat;
+  background-image: center;
+  background-attachment: fixed;
+  height: 300px;
+} 
 
 
 

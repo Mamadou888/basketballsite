@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	var myRef = new Firebase("https://basketballsite.firebaseio.com");
+	var myRef = new Firebase("https://mygamebook.firebaseio.com");
 	var auth = new FirebaseSimpleLogin(myRef, function(error, user) {
 		if (error) {
     // an error occurred while attempting login

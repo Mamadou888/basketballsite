@@ -3,25 +3,88 @@
   <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"> 
-   
-</head>
-<body>
+  <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+    body {
+      text-align: center;
+      padding: 5px;
+    }
+    .leadTable {
+      position: center;
+      color: maroon;
+    }
+      .nav a {
+        /*So lists doesnt appear as bullet points, add padding on each side*/
+        color: maroon;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 14px;
+        text-transform: uppercase;
+      }
 
-<div class="example-base example-leaderboard l-demo-container">
-  <table id="leaderboardTable">
-    <tr>
-      <th>Player</th>
-      <th>Score</th>
-    </tr>
-  </table
-  <footer>
-    <input class="example-leaderboard-name" type="text" id="nameInput" placeholder="Enter a name">
-    <input class="example-leaderboard-score" type="text" id="scoreInput" placeholder="Record your score...">
-  </footer>
-</div>
+      .nav li {
+        display: inline;
+        font-size: 22px;
+        font-weight: bold;
+        padding: 0px;
+      }
+
+      .nav {
+        border: -50px solid;
+        left: 70px;
+        background-position: relative;
+      }
+
+      .nav .containers{
+        margin-top: 10px;
+        padding: 0px;
+      }
+      .nav .containers li {
+        font-size: 31px;
+        color: #DF4713;
+        /*padding: -10122px;*/
+      }
+
+      .lead {
+        text-align:;
+      }
+
+
+    </style> 
+  </head>
+  <body>
+    <section>
+      <body>
+        <div class="nav">
+          <div class="container">
+            <div class="containers">
+              <ul class="pull-left">
+                <li>LeaderBoards</li>
+              </ul>
+            </div>
+            <ul class="pull-right">
+              <li><a href="person_profile.html">Profile Page</a></li>
+              <li><a href="myGameBook.html">My GameBook</a></li>
+              <li><a href="#">Find a Park</a></li>
+            </ul> 
+          </div>
+        </div> 
+      </section>
+
+      <div class="example-base example-leaderboard l-demo-container">
+      <div class="lead">
+        <table id="leaderboardTable">
+          <tr class="leadTable">
+            <th>Player</th>
+            <th>Score</th>
+          </tr>
+          </table>
+      </div>
+            <input class="example-leaderboard-name" type="text" id="nameInput" placeholder="Enter a name">
+            <input class="example-leaderboard-score" type="text" id="scoreInput" placeholder="Record your score...">
+      </div>
 <script>
-  var LEADERBOARD_SIZE = 5;
+          var LEADERBOARD_SIZE = 20;
 
   // Create our Firebase reference
   var scoreListRef = new Firebase('https://yaplthw0dtx.firebaseio-demo.com//scoreList');

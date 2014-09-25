@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<style type="text/css">
+		body {
+			font-weight: bold;
+			font-family: helvetica;
+		}
+		h1 {
+			text-align: center;
+			color: maroon;
+		}
+
+		button {
+			background-color: black;
+			padding: 10px;
+			font-size: 12px;
+			border: 0px;
+			color: #FFFFFF;
+		}
+
+	</style>
+</head>
+<body>
+	<h1> Only post on the User's Gamebook profile</h<input>
+		<div class="uno">
+			<input id="theUsername" type="text" placeholder="Username:">
+			<input type="text" id="message" placeholder="Message">
+			<button id="yourProfile">Your Profile</button>
+			<h3>User's Messages</h3>
+		</div>
+	 	<div class="jumbotron">
+	 		<p></p>
+	 	</div>
+
+		<script type="text/javascript">
+
+		var displayMessagesfor = function() {
+				var theUser = $("#theUsername").val();
+				var bigObject = {
+					user1: {userName: "mamadou", userMessage: ": Aint no party like a wifi party"},
+					user2: {userName: "saikou",userMessage: "I'm a little badass that think i can beat anybody up"},
+					user3: {userName: "modatou",userMessage: "Im little and annoying"},
+					user4: {userName: "ray",userMessage: "Im a little bird and no one likes me"},
+					user5: {userName: "kadiatou",userMessage: "Im momma bear when in the house"},
+					user6: {userName: "austin",userMessage: "I look like bruno mars and TED"},
+				};
+
+				if (theUser===bigObject.user1.userName) {
+				$(".jumbotron").append("<p>"+theUser+": "+ bigObject.user1.userMessage+"</p>");
+			} 	else if (theUser===bigObject.user2.userName) { 
+				$(".jumbotron").append("<p>"+theUser+": "+ bigObject.user2.userMessage+"</p>"); 
+			} 	else if (theUser===bigObject.user3.userName) {
+				$(".jumbotron").append("<p>"+theUser+": "+ bigObject.user3.userMessage+"</p>");
+			}	else if (theUser===bigObject.user4.userName) {
+				$(".jumbotron").append("<p>"+theUser+": "+ bigObject.user4.userMessage+"</p>");
+			}	else if (theUser===bigObject.user5.userName) {
+				$(".jumbotron").append("<p>"+theUser+": "+ bigObject.user5.userMessage+"</p>");
+			}	else if (theUser===bigObject.user6.userName) {
+				$(".jumbotron").append("<p>"+theUser+": "+ bigObject.user6.userMessage+"</p>");
+			}	else {
+				userMessage = "This user doesnt exist in the DataBase"
+				$(".jumbotron").append("<p>"+theUser+": "+ userMessage
+					+"</p>");
+			};
+		};
+		
+	$("#yourProfile").click(displayMessagesfor)
+
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
