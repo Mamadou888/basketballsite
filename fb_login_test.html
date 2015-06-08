@@ -6,14 +6,15 @@
 </head>
 <body>
 <h1>Facebook Login JS Example</h1>
+<h2>If you're done, log out.</h2>
+<button onclick="logout()">Log Out</button>
 <div
   class="fb-like"
   data-share="true"
   data-width="450"
   data-show-faces="true">
 </div>
-<h2>If you're done, log out.</h2>
-<button onclick="logout()">Log Out</button>
+
 <script>
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
