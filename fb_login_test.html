@@ -12,6 +12,8 @@
   data-width="450"
   data-show-faces="true">
 </div>
+<h2>If you're done, log out.</h2>
+<button onclick="logout()">Log Out</button>
 <script>
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
@@ -51,7 +53,7 @@
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
     xfbml      : true,  // parse social plugins on this page
-    version    : 'v2.2' // use version 2.2
+    version    : 'v2.3' // use version 2.2
   });
 
   // Now that we've initialized the JavaScript SDK, we call 
@@ -89,6 +91,13 @@
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
+    });
+  }
+
+  // To log people out of FB and the App
+  function logout() {
+     FB.logout(function(response) {
+        // Person is now logged out
     });
   }
 </script>
