@@ -94,7 +94,7 @@
   }
 
   // To log people out of FB and the App
-  function logout() {
+  function fbLogout() {
      FB.logout(function(response) {
         // Person is now logged out
     });
@@ -115,7 +115,7 @@
 
 
 <h2>If you're done, log out.</h2>
-<fb:logout-button onclick="logout()">Log Out</button></fb:logout-button>
+<span onclick="fbLogout()"><a>Logout</a></span>
 
 </body>
 </html>
